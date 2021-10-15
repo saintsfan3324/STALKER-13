@@ -241,6 +241,21 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 30, "fire" = 10, "psy" = 0)
 	unique = 0
 
+/obj/item/clothing/suit/hooded/kozhanka/renegadecoat
+	name = "renegade coat"
+	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped onto it."
+	eng_desc = "A tan trenchcoat with light armor plates and shoulder pads strapped onto it."
+	icon_state = "renegadecoat"
+	item_state = "renegadecoat_t"
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 15, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/stalker/renegade
+	durability = 75
+
+/obj/item/clothing/head/hooded/stalker/renegade
+	armor = list("melee" = 15, "bullet" = 0, "laser" = 15, "energy" = 5, "bomb" = 0, "bio" = 5, "rad" = 20, "fire" = 5, "psy" = 0)
+	icon_state = "winterhood_renegade"
+	flags_inv = HIDEEARS|HIDEHAIR
+
 /obj/item/clothing/suit/hooded/kozhanka/tancoat
 	name = "tan coat"
 	desc = "A tan trenchcoat with light armor plates and shoulder pads strapped on it."
@@ -1091,6 +1106,7 @@
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 30, "fire" = 10, "psy" = 0)
 	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
+
 	resistance_flags = UNACIDABLE
 	hoodtype = /obj/item/clothing/head/hooded/stalker/ghillie
 	durability = 75
@@ -1102,32 +1118,3 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	icon_state = "ghillie"
 
-/obj/item/clothing/suit/6b2
-	name = "6B2"
-	desc = "The 6B2 bulletproof vest was developed at the request of the USSR Ministry of Defense in 1980, after which it was supplied to the Soviet Army. The vest was used in all branches of the Soviet Army during the Afghan War of 1979-1989, and still remains in service in some post-Soviet states. The bulletproof vest has an average area of protection, has a height adjustment in the shoulder section, and is fastened on the user with Velcro."
-	eng_desc = "The 6B2 bulletproof vest was developed at the request of the USSR Ministry of Defense in 1980, after which it was supplied to the Soviet Army. The vest was used in all branches of the Soviet Army during the Afghan War of 1979-1989, and still remains in service in some post-Soviet states. The bulletproof vest has an average area of protection, has a height adjustment in the shoulder section, and is fastened on the user with Velcro."
-	icon_state = "6b2"
-	item_state = "6b2"
-	body_parts_covered = CHEST|GROIN
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	armor = list("melee" = 50, "bullet" = 55, "laser" = 45, "energy" = 30, "bomb" = 60, "bio" = 20, "rad" = 20, "fire" = 20, "psy" = 0
-	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
-	resistance_flags = UNACIDABLE
-	durability = 190
-	//МОДИФИКАЦИИ//
-
-/obj/item/clothing/suit/d2
-	name = "Defender II Vest	"
-	desc = "Experience in the First Chechen War has shown that personnel need durable protection, which includes both front and back plates and neck and groin protection, because even one fragmentary injury might cause death. For this problem, FORT TECHNOLOGY issued the Defender 2 vest, which became standard equipment element in different SF units of FSB,FSO and Rusguard. It provides users with optimal protection coverage and included detachable neck protectors and groin pads. This particular one comes with a groin pad."
-	eng_desc = "Experience in  the First Chechen War has shown that personnel need durable protection, which includes both front and back plates and neck and groin protection, because even one fragmentary injury might cause death. For this problem. FORT TECHNOLOGY issued the Defender 2 vest, which became standard equipment element in different SF units of FSB,FSO and Rusguard. It provides users with optimal protection coverage and included detachable neck protectors and groin pads. This particular one comes with a groin pad."
-	icon_state = "d2"
-	item_state = "d2"
-	body_parts_covered = CHEST|GROIN
-	cold_protection = CHEST|GROIN
-	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	armor = list("melee" = 85, "bullet" = 80, "laser" = 45, "energy" = 60, "bomb" = 80, "bio" = 30, "rad" = 30, "fire" = 20, "psy" = 0
-	allowed = list(/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/restraints/handcuffs,/obj/item/flashlight/seclite,/obj/item/storage/fancy/cigarettes,/obj/item/lighter,/obj/item/kitchen/knife/tourist)
-	resistance_flags = UNACIDABLE
-	durability = 150
-	//МОДИФИКАЦИИ//
